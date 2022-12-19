@@ -7,7 +7,7 @@ function Comment({ comment }) {
     <Link href={`/status/${comment._id}`}>
       <div className="p-4 border-b flex gap-3 hover:bg-slate-100 transitions cursor-pointer">
         {/* left imgae */}
-        <div className="shrink-0 h-10 w-10">
+        <div className="h-10 w-10">
           <img
             src="/man.png"
             className=" w-full h-full rounded-full object-cover object-top"
@@ -19,7 +19,9 @@ function Comment({ comment }) {
           {/* Top (Name | email | time) */}
           <div className="flex items-center space-x-2">
             <p className="font-bold">{comment?.username}</p>
-            <p className="text-sm text-slate-500">{comment?.email} .</p>
+            <p className="text-sm hidden md:inline text-slate-500">
+              {comment?.email} .
+            </p>
           </div>
 
           {/* Middle (text) */}

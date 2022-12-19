@@ -13,10 +13,10 @@ function Tweet({ tweet, totalComment }) {
     <Link href={`/status/${tweet?._id}`}>
       <div className="p-4 border-b flex gap-3 hover:bg-slate-100 transitions cursor-pointer">
         {/* left imgae */}
-        <div className="shrink-0">
+        <div className="h-10 w-10 md:h-14 md:w-14 ">
           <img
             src="/man.png"
-            className="h-10 w-10 md:h-14 md:w-14 rounded-full object-cover object-top"
+            className="w-full h-full rounded-full object-cover object-top"
             alt=""
           />
         </div>

@@ -12,7 +12,7 @@ function Homepage({ AllTweets, totalPage }) {
 
   return (
     <Layout>
-      <div className="overflow-y-scroll h-screen scrollbar-hide">
+      <div className="overflow-y-scroll h-screen scrollbar-hide w-full">
         <div className="font-bold text-lg p-4">Home</div>
 
         {session?.data?.user ? (
