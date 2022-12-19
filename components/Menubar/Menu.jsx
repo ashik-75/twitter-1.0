@@ -13,7 +13,7 @@ function Menu({ url, Icon, text, SolidIcon }) {
             path.pathname === url && "bg-gray-200"
           }`}
         >
-          <TagName className="w-8 h-8 md:w-5 md:h-5" />
+          <TagName className="w-6 h-6 md:w-5 md:h-5" />
           <p
             className={`text-xl hidden md:inline ${
               path.pathname === url && "font-bold"

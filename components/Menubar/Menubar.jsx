@@ -17,6 +17,7 @@ import {
   UserIcon as SolidUserIcon,
 } from "@heroicons/react/24/solid";
 import { useSession } from "next-auth/react";
+import Link from "next/link";
 import React from "react";
 import Menu from "./Menu";
 import ProfileBar from "./ProfileBar";
@@ -25,13 +26,15 @@ function Menubar() {
   const { data } = useSession() || {};
 
   return (
-    <div className="relative w-[8rem] h-screen md:w-[15rem]  overflow-y-scroll scrollbar-hide">
+    <div className="relative  h-screen md:w-[15rem]  overflow-y-scroll scrollbar-hide">
       <div className="w-14 h-14 mx-auto md:mx-0 my-2 p-3 transition hover:bg-twitter/10 rounded-full cursor-pointer">
-        <img
-          src="/twitter.png"
-          className="w-full h-full object-cover object-center"
-          alt=""
-        />
+        <Link href={"/"}>
+          <img
+            src="/twitter.png"
+            className="w-full h-full object-cover object-center"
+            alt=""
+          />
+        </Link>
       </div>
       <div className="flex flex-col items-center md:items-start">
         <Menu SolidIcon={SolidHomeIcon} Icon={HomeIcon} url="/" text={"Home"} />

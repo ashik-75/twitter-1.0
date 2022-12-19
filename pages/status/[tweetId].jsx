@@ -22,7 +22,7 @@ function Tweet() {
   return (
     <Layout>
       {!data && !error ? (
-        <div className="h-40 flex justify-center items-center">
+        <div className="h-40 w-full flex justify-center items-center">
           <Loader />
         </div>
       ) : (
