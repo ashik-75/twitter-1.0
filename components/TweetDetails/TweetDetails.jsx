@@ -21,11 +21,13 @@ function TweetDetails({ tweet, comments, setAllComments }) {
       </div>
       <Tweet tweet={tweet} totalComment={comments?.length} />
 
-      <CommentBox
-        data={data}
-        tweetId={tweet?._id}
-        setAllComments={setAllComments}
-      />
+      {data?.user && (
+        <CommentBox
+          data={data}
+          tweetId={tweet?._id}
+          setAllComments={setAllComments}
+        />
+      )}
       <CommentList comments={comments} />
     </div>
   );

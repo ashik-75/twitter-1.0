@@ -44,20 +44,20 @@ function Tweet({ tweet, totalComment }) {
                 <ChatBubbleOvalLeftIcon className="w-5 h-5 group-hover:text-twitter" />
               </div>
               <span className="group-hover:text-twitter">
-                {totalComment || null}
+                {totalComment || 0}
               </span>
             </div>
             <div className="flex space-x-2 items-center group">
               <div className="p-2 group-hover:bg-green-600/20 rounded-full">
                 <ArrowsUpDownIcon className="w-5 h-5 group-hover:text-green-600" />
               </div>
-              <span className="group-hover:text-green-600">10</span>
+              <span className="group-hover:text-green-600">0</span>
             </div>
             <div className="flex space-x-2 items-center group transition ">
               <div className="p-2 rounded-full group-hover:bg-rose-400/40">
                 <HeartIcon className="w-5 h-5 group-hover:text-rose-500 " />
               </div>
-              <span className="group-hover:text-rose-500">10</span>
+              <span className="group-hover:text-rose-500">0</span>
             </div>
             <div className="hover:bg-green-300/20 p-2 rounded-full">
               <ArrowUpTrayIcon className="w-5 h-5 hover:text-green-600" />

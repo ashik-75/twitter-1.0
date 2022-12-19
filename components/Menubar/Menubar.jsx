@@ -71,7 +71,7 @@ function Menubar() {
           url="/more"
           text={"More"}
         />
-        <button className="mt-2 bg-twitter w-[60%] md:w-[80%] py-2 md:py-3 rounded-full font-bold text-white text-sm md:text-xl">
+        <button className="hidden md:inline mt-2 bg-twitter w-[60%] md:w-[80%] py-2 md:py-3 rounded-full font-bold text-white text-sm md:text-xl">
           Tweet
         </button>
       </div>
