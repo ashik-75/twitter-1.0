@@ -25,7 +25,9 @@ function Tweet({ tweet, totalComment }) {
           {/* Top (Name | email | time) */}
           <div className="flex items-center space-x-2">
             <p className="font-bold">{tweet?.username}</p>
-            <p className="text-sm text-slate-500">{tweet?.email} .</p>
+            <p className="text-sm text-slate-500 hidden md:inline">
+              {tweet?.email}
+            </p>
           </div>
 
           {/* Middle (text) */}
